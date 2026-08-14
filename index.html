@@ -1319,6 +1319,26 @@
           
     
         }
+
+      /* Leadership Team Layout */
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+
+/* Keep leadership cards equal in height */
+.leadership-grid .team-card {
+    width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+}
         
     /* Orange variant for the Core Team eyebrow */
     .core-eyebrow {
