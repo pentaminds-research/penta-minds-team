@@ -1355,6 +1355,25 @@
           
     
         }
+
+      .leadership-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 42px auto 0;
+  max-width: 760px;
+}
+
+.leadership-grid .team-card {
+  width: 100%;
+}
+
+      @media (max-width: 680px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+}
         
     @keyframes corePulse {
           
@@ -1919,7 +1938,7 @@
             </article>
           </div>
           <div style="display:flex;justify-content:center;margin-top:42px">
-            <article class="team-card reveal" data-member-id="vignesh-prakash">
+            <article class="team-card reveal" data-member-id="priyadharshini-k-k">
               <span class="avatar" data-initials="VP">
                 <img src="https://res.cloudinary.com/dn7sbid1f/image/upload/v1786639172/priyadharshini-director_cbzdvp.png">
               </span>
