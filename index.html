@@ -888,6 +888,28 @@
           width:40px;
           animation:spin 700ms linear infinite
         }
+      /* Center the final Core Team card on an incomplete final row */
+.core-team-grid .team-card:last-child {
+  grid-column: 3 / span 2;
+}
+      /* Responsive overrides for Core Team */
+@media (max-width: 920px) {
+  .core-team-grid .team-card,
+  .core-team-grid .team-card:nth-child(4),
+  .core-team-grid .team-card:nth-child(5),
+  .core-team-grid .team-card:last-child {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 680px) {
+  .core-team-grid .team-card,
+  .core-team-grid .team-card:nth-child(4),
+  .core-team-grid .team-card:nth-child(5),
+  .core-team-grid .team-card:last-child {
+    grid-column: auto;
+  }
+}
         @keyframes spin {
           to {
             transform:rotate(360deg)
