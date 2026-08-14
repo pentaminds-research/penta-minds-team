@@ -888,6 +888,29 @@
           width:40px;
           animation:spin 700ms linear infinite
         }
+      .leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 360px));
+  justify-content: center;
+  gap: 28px;
+  margin-top: 42px;
+}
+
+.leadership-grid .team-card {
+  width: 100%;
+}
+
+.profile-action {
+  margin-top: 14px;
+}
+      @media (max-width: 680px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
       /* Center the final Core Team card on an incomplete final row */
 #team-grid-container .team-card:last-child {
   grid-column: 3 / span 2;
@@ -1940,43 +1963,74 @@
       </section>
 
 <section class="section" id="leadership">
-        <div class="container text-center">
-          <div class="reveal">
-            <h2 class="section-title">Leadership</h2>
-            <span class="orange-rule">
-            </span>
-          </div>
-          <div style="display:flex;justify-content:center;margin-top:42px">
-            <article class="team-card reveal" data-member-id="vignesh-prakash">
-              <span class="avatar" data-initials="VP">
-                <img src="https://res.cloudinary.com/dn7sbid1f/image/upload/v1786639174/vignesh-director_q7phhd.png">
-              </span>
-              <h3>Vignesh Prakash</h3>
-              <span class="badge">Founder &amp Director</span>
-              <p class="member-meta">Research &amp Execution · Penta Minds</p>
-              <a class="linkedin" href="https://www.linkedin.com/in/vigneshprak" aria-label="Vignesh Prakash LinkedIn">in</a>
-              <div style="margin-top:14px">
-                <a class="btn btn-orange" href="#" onclick="redirectTo('https://vignesh.pentaminds.in', 'Opening Founder Profile...')">View Profile</a>
-              </div>
-            </article>
-          </div>
-          <div style="display:flex;justify-content:center;margin-top:42px">
-            <article class="team-card reveal" data-member-id="priyadharshini-k-k">
-              <span class="avatar" data-initials="VP">
-                <img src="https://res.cloudinary.com/dn7sbid1f/image/upload/v1786639172/priyadharshini-director_cbzdvp.png">
-              </span>
-              <h3>Priyadharshini K K</h3>
-              <span class="badge">Director</span>
-              <p class="member-meta">Operations · Penta Minds</p>
-              <a class="linkedin" href="https://www.linkedin.com/in/priyadharshini-k-k-b4732b373" aria-label="Priyadharshini LinkedIn">in</a>
-              <div style="margin-top:14px">
-                <a class="btn btn-orange" href="#" onclick="redirectTo('https://priyadharshini.pentaminds.in', 'Opening Director Profile...')">View Profile</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+  <div class="container text-center">
 
+    <div class="reveal">
+      <h2 class="section-title">Leadership</h2>
+      <span class="orange-rule"></span>
+    </div>
+
+    <div class="leadership-grid">
+
+      <article class="team-card reveal" data-member-id="vignesh-prakash">
+        <span class="avatar" data-initials="VP">
+          <img
+            src="https://res.cloudinary.com/dn7sbid1f/image/upload/v1786639174/vignesh-director_q7phhd.png"
+            alt="Vignesh Prakash"
+          >
+        </span>
+
+        <h3>Vignesh Prakash</h3>
+        <span class="badge">Founder &amp; Director</span>
+        <p class="member-meta">Research &amp; Execution · Penta Minds</p>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vigneshprak"
+          aria-label="Vignesh Prakash LinkedIn"
+        >in</a>
+
+        <div class="profile-action">
+          <a
+            class="btn btn-orange"
+            href="#"
+            onclick="redirectTo('https://vignesh.pentaminds.in', 'Opening Founder Profile...')"
+          >View Profile</a>
+        </div>
+      </article>
+
+
+      <article class="team-card reveal" data-member-id="priyadharshini-k-k">
+        <span class="avatar" data-initials="PK">
+          <img
+            src="https://res.cloudinary.com/dn7sbid1f/image/upload/v1786639172/priyadharshini-director_cbzdvp.png"
+            alt="Priyadharshini K K"
+          >
+        </span>
+
+        <h3>Priyadharshini K K</h3>
+        <span class="badge">Director</span>
+        <p class="member-meta">Operations · Penta Minds</p>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/priyadharshini-k-k-b4732b373"
+          aria-label="Priyadharshini K K LinkedIn"
+        >in</a>
+
+        <div class="profile-action">
+          <a
+            class="btn btn-orange"
+            href="#"
+            onclick="redirectTo('https://priyadharshini.pentaminds.in', 'Opening Director Profile...')"
+          >View Profile</a>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
   <section class="section" id="departments" style="background:white">
         <div class="container">
           <div class="reveal">
