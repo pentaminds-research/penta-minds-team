@@ -633,14 +633,14 @@
           margin-top:42px
         }
         .team-card {
-          grid-column:span 2;
-          text-align:center
+          grid-column:span 1;
+          text-align:center;
         }
         .team-card:nth-child(4) {
-          grid-column:2/span 2
+          grid-column:span 1;
         }
         .team-card:nth-child(5) {
-          grid-column:4/span 2
+          grid-column:4/span 2;
         }
         .associate-row {
           
