@@ -125,36 +125,72 @@
           display:flex;
           justify-content:space-between;
           min-height:78px;
-          gap:24px
+          gap:24px;
         }
         .brand {
           display:inline-flex;
           flex-direction:column;
-          line-height:1.05
+          line-height:1.05;
         }
-        .brand-main {
-          font-size:1.32rem;
-          font-weight:800
+         .brand-main {
+          
+          
+      font-size: 1.32rem;
+          
+      font-weight: 800;
+          
+      letter-spacing: 0;
+      
+          
+    
         }
-        .brand-penta {
-          color:var(--navy)
+        
+        #text{
+          position: absolute;
         }
-        .brand-minds {
-          color:var(--orange)
+        #text1{
+          position: relative;
+          left: 65px;
         }
-        .brand-sub {
-          color:var(--muted);
-          font-size:.72rem;
-          font-weight:800;
-          letter-spacing:.12em;
-          margin-top:4px;
-          text-transform:uppercase
+
+    .brand-penta {
+          
+      color: var(--navy);
+          
+    
         }
+        
+
+    .brand-minds {
+          
+      color: var(--orange);
+          
+    
+        }
+        
+
+    .brand-sub {
+          
+      color: #777f8d;
+          
+      font-size: 0.72rem;
+          
+      font-weight: 500;
+          
+      margin-top: 4px;
+          
+      text-transform: uppercase;
+          
+    
+        }
+    
         .nav-links {
           align-items:center;
           display:flex;
           gap:8px;
-          list-style:none
+          list-style:none;
+          position: relative;
+          left: 50px;
         }
         .nav-link {
           border-radius:999px;
@@ -340,7 +376,9 @@
           display:block;
           height:4px;
           width:82px;
-          margin-top:18px
+          margin-top:18px;
+          position: relative;
+          right: 500px;
         }
         .orange-divider {
           background:var(--orange);
@@ -377,11 +415,10 @@
           background:white;
           border:1px solid var(--line);
           border-radius:var(--radius);
-          padding:30px 22px;
-          transition:.22s
+          padding:20px 2px;
+          transition:.22s;
+          position: relative;
         }
-        
-
         .info-card:hover,.team-card:hover,.objective-card:hover,.resource-card:hover,.associate-card:hover {
           box-shadow:var(--shadow);
           transform:translateY(-5px)
@@ -633,14 +670,14 @@
           margin-top:42px
         }
         .team-card {
-          grid-column:span 2;
+          grid-column:span 1;
           text-align:center;
         }
         .team-card:nth-child(4) {
-          grid-column:2/span 2;
+          grid-column:span 2
         }
         .team-card:nth-child(5) {
-          grid-column:4/span 2;
+          grid-column:span 1
         }
         .associate-row {
           
@@ -796,6 +833,15 @@
           background:var(--navy-dark);
           color:white
         }
+
+        #fo
+        {
+          position: relative;
+          right: 60px;
+          top: 5px;
+        
+        }
+
         .footer-grid {
           align-items:center;
           display:grid;
@@ -808,11 +854,11 @@
           flex-wrap:wrap;
           gap:14px;
           justify-content:center;
-          list-style:none
+          list-style:none;
         }
         .footer-links a {
           color:rgba(255,255,255,.74);
-          font-size:.9rem;
+          font-size:0.9rem;
           font-weight:700
         }
         .footer-copy {
@@ -852,14 +898,57 @@
         }
       .leadership-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 360px));
+  grid-template-columns: repeat(2, minmax(200px, 320px));
   justify-content: center;
   gap: 28px;
   margin-top: 42px;
 }
 
 #le{
-      grid-column:span 2;
+  position: relative;
+  align-items: center;
+  left: 80px;
+  width: 630px;
+  display: inline;
+
+}
+
+#l
+{
+  grid-column: span 2;
+  position: relative;
+  right: 220px;
+  width: 300px;
+  display: inline;
+  margin-left: 300px;
+}
+
+#e
+{
+   grid-column: span 2;
+  position: relative;
+  left: 108px; 
+  width: 300px;
+  display: inline;
+  margin-left: 300px;
+  bottom: 317px;
+}
+
+#re
+{
+  position: relative;
+  left: 200px;
+}
+
+#j{
+  position: relative;
+  left: 520px;
+}
+
+#jo
+{
+  position: relative;
+  left: 200px;
 }
 
 .leadership-grid .team-card {
@@ -887,7 +976,7 @@
   #team-grid-container .team-card:nth-child(4),
   #team-grid-container .team-card:nth-child(5),
   #team-grid-container .team-card:last-child {
-    grid-column: span 3;
+    grid-column: span 2;
   }
 }
 
