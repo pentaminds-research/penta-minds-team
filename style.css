@@ -875,7 +875,7 @@
 }
       /* Center the final Core Team card on an incomplete final row */
 #team-grid-container .team-card:last-child {
-  grid-column: 3 / span 2;
+  grid-column: span 2;
 }
       /* Responsive overrides for Core Team */
 @media (max-width: 920px) {
