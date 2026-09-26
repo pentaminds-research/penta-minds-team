@@ -858,6 +858,10 @@
   margin-top: 42px;
 }
 
+#le{
+      grid-column:span 1;
+}
+
 .leadership-grid .team-card {
   width: 100%;
 }
