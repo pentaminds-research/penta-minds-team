@@ -938,6 +938,7 @@
 {
   position: relative;
   left: 200px;
+  padding: 20px;
 }
 
 #j{
@@ -1378,13 +1379,15 @@
 .leadership-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
+    gap: 20px;
     align-items: stretch;
+    height: 700px;
 }
 
 /* Keep leadership cards equal in height */
 .leadership-grid .team-card {
     width: 100%;
+    
 }
 
 /* Mobile */
