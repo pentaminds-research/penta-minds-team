@@ -380,6 +380,12 @@
           padding:30px 22px;
           transition:.22s
         }
+        #ca
+        {
+          position: relative;
+          left: 200px;
+        }
+
         .info-card:hover,.team-card:hover,.objective-card:hover,.resource-card:hover,.associate-card:hover {
           box-shadow:var(--shadow);
           transform:translateY(-5px)
