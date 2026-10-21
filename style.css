@@ -1207,7 +1207,227 @@
       display: none;
           
         }
-        
+
+
+/* =========================================================
+   PENTA MINDS — UNIVERSAL CONTACT SECTION
+   Brand: Navy #0D2145 | Orange #E87722
+   Fonts: Inter + Playfair Display
+   ========================================================= */
+
+:root {
+  --pm-contact-navy: #0D2145;
+  --pm-contact-orange: #E87722;
+  --pm-contact-white: #FFFFFF;
+  --pm-contact-body-font: "Inter", Arial, sans-serif;
+  --pm-contact-heading-font: "Playfair Display", Georgia, serif;
+}
+
+/* Section foundation */
+.pm-contact {
+  background: var(--pm-contact-navy);
+  color: var(--pm-contact-white);
+  padding: clamp(64px, 8vw, 100px) 0;
+  position: relative;
+  width: 100%;
+}
+
+.pm-contact,
+.pm-contact * {
+  box-sizing: border-box;
+}
+
+.pm-contact__container {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+/* Contact heading */
+.pm-contact__title {
+  color: var(--pm-contact-white);
+  font-family: var(--pm-contact-body-font);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+/* Optional description */
+.pm-contact__description {
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--pm-contact-body-font);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0 0 12px;
+  max-width: 760px;
+}
+
+/* Email address */
+.pm-contact__email {
+  color: var(--pm-contact-orange);
+  display: inline-block;
+  font-family: var(--pm-contact-heading-font);
+  font-size: clamp(1.6rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 18px 0 28px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.pm-contact__email:hover {
+  color: var(--pm-contact-white);
+}
+
+.pm-contact__email:focus-visible,
+.pm-contact__social:focus-visible {
+  outline: 2px solid var(--pm-contact-orange);
+  outline-offset: 5px;
+}
+
+/* Social links */
+.pm-contact__socials {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pm-contact__social {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  color: var(--pm-contact-white);
+  display: inline-flex;
+  font-family: var(--pm-contact-body-font);
+  font-size: 0.95rem;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 44px;
+  padding: 9px 16px;
+  text-decoration: none;
+  transition: background-color 180ms ease,
+              border-color 180ms ease,
+              color 180ms ease;
+}
+
+.pm-contact__social:hover {
+  background: var(--pm-contact-orange);
+  border-color: var(--pm-contact-orange);
+  color: var(--pm-contact-white);
+}
+
+/* Division affiliation */
+.pm-contact__affiliation {
+  color: rgba(255, 255, 255, 0.72);
+  font-family: var(--pm-contact-body-font);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 26px 0 0;
+}
+
+/* Research Council identity */
+.pm-contact__council {
+  align-items: baseline;
+  color: var(--pm-contact-white);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--pm-contact-body-font);
+  font-size: clamp(1.5rem, 3.2vw, 2.25rem);
+  font-weight: 800;
+  gap: 0.35em;
+  justify-content: center;
+  line-height: 1.3;
+  margin: 34px 0 0;
+  text-align: center;
+}
+
+.pm-contact__council-main {
+  color: var(--pm-contact-white);
+}
+
+.pm-contact__council-sub {
+  color: var(--pm-contact-orange);
+}
+
+/* Small-screen refinements */
+@media (max-width: 600px) {
+  .pm-contact__container {
+    width: calc(100% - 32px);
+  }
+
+  .pm-contact__email {
+    font-size: clamp(1.5rem, 7vw, 2.3rem);
+  }
+
+  .pm-contact__council {
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    font-size: clamp(1.45rem, 6vw, 2rem);
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .pm-contact__email,
+  .pm-contact__social {
+    transition: none;
+  }
+}
+
+
+/* =========================================================
+   ALIGNMENT VARIANTS
+   ========================================================= */
+
+/* Main website: contact content centred */
+.pm-contact--center {
+  text-align: center;
+}
+
+.pm-contact--center .pm-contact__description {
+  margin-inline: auto;
+}
+
+.pm-contact--center .pm-contact__socials {
+  justify-content: center;
+}
+
+/* Subdomains: contact content aligned left */
+.pm-contact--left {
+  text-align: left;
+}
+
+.pm-contact--left .pm-contact__description {
+  margin-inline: 0;
+}
+
+.pm-contact--left .pm-contact__socials {
+  justify-content: flex-start;
+}
+
+/* The Council heading stays centred on EVERY website */
+.pm-contact--left .pm-contact__council,
+.pm-contact--center .pm-contact__council {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mobile: preserve the selected alignment */
+@media (max-width: 600px) {
+  .pm-contact--center .pm-contact__socials {
+    justify-content: center;
+  }
+
+  .pm-contact--left .pm-contact__socials {
+    justify-content: flex-start;
+  }
+}
+
 
   /* ── Team Section Eyebrow Labels ─────────────────────────────── */
     .section-eyebrow {
