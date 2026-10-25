@@ -860,6 +860,7 @@
           position: relative;
           right: 60px;
           top: 5px;
+          
         
         }
 
@@ -873,9 +874,10 @@
         .footer-links {
           display:flex;
           flex-wrap:wrap;
-          gap:14px;
+          gap:-10px;
           justify-content:center;
           list-style:none;
+          margin-left: 10px;
         }
         .footer-links a {
           color:rgba(255,255,255,.74);
@@ -886,7 +888,10 @@
           color:rgba(255,255,255,.72);
           font-size:.9rem;
           font-weight:700;
-          text-align:right
+          text-align:right;
+          position: relative;
+          width: 300%;
+          
         }
         .footer-line {
           background:var(--orange);
